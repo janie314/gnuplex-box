@@ -1,0 +1,15 @@
+[
+	{
+		"name": "Deploy GNUPlex Box",
+		"hosts": "targets",
+		"strategy": "free",
+		"roles": [
+			{
+				"name": "pkgs"
+			},
+			{
+				"name": "users"
+			}
+		]
+	}
+]

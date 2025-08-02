@@ -1,0 +1,15 @@
+[
+	{
+		"tags": "pkgs",
+		"block": [
+			{
+				"name": "Install packages",
+				"ansible.builtin.package": {
+					"name": ["git", "go"],
+					"state": "latest"
+				},
+				"become": "yes"
+			}
+		]
+	}
+]
