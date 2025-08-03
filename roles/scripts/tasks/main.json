@@ -45,6 +45,26 @@
           "mode": "0744",
           "backup": "yes"
         }
+      },
+      {
+        "name": "Install calparse",
+        "ansible.builtin.git": {
+          "repo": "https://github.com/janie314/calparse",
+          "dest": "/home/gnuplex/.local/bin/calparse"
+        },
+        "become": true,
+        "become_method": "su",
+        "become_user": "gnuplex"
+      },
+      {
+        "name": "Install weatherparse",
+        "ansible.builtin.git": {
+          "repo": "https://github.com/janie314/weatherparse",
+          "dest": "/home/gnuplex/.local/bin/weatherparse"
+        },
+        "become": true,
+        "become_method": "su",
+        "become_user": "gnuplex"
       }
     ]
   }
