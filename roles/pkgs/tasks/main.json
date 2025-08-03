@@ -13,6 +13,7 @@
             "dolphin",
             "firefox",
             "mpv",
+            "just",
             "caddy"
           ],
           "state": "latest"

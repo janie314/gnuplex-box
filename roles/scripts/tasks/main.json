@@ -3,6 +3,17 @@
     "tags": "users",
     "block": [
       {
+        "name": "Install update script",
+        "ansible.builtin.copy": {
+          "src": "update",
+          "dest": "/usr/local/bin/update",
+          "owner": "root",
+          "group": "root",
+          "mode": "0744",
+          "backup": "yes"
+        }
+      },
+      {
         "name": "Install gnuplex-run",
         "ansible.builtin.copy": {
           "src": "gnuplex-run",
