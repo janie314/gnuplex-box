@@ -1,0 +1,10 @@
+#!/bin/sh
+export PATH="$PATH:$HOME/.local/bin"
+while true
+do
+	cd "$HOME/.local/bin/calparse"
+	uv run calparse.py sequence>"$HOME"/.cache/cal
+	cd "$HOME/.local/bin/weatherparse"
+	uv run weatherparse.py --waqi '@5933/?token=e528056b85d59dd64aef3962bb41e99462ec176a' >"$HOME"/.cache/weather
+	sleep 25
+done

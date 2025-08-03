@@ -1,0 +1,21 @@
+
+general {
+  output_format = "none"
+  interval = 2
+}
+
+order += "read_file cal" 
+order += "read_file weather" 
+order += "tztime local"
+
+read_file weather {
+  path = "/home/gnuplex/.cache/weather"
+}
+
+read_file cal {
+  path = "/home/gnuplex/.cache/cal"
+}
+
+tztime local {
+  format = "%A %B %-d | %-I:%M %p"
+}

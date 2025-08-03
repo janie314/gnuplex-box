@@ -1,0 +1,2 @@
+#!/bin/sh
+/home/gnuplex/.local/bin/gnuplex -static_files /home/gnuplex/.local/bin/gnuplex-code/backend/static
