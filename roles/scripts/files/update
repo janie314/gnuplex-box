@@ -1,0 +1,3 @@
+#!/bin/sh
+apk upgrade -U
+doas -u gnuplex /home/gnuplex/.bun/bin/bun upgrade
