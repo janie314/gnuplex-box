@@ -1,0 +1,26 @@
+[
+	{
+		"tags": "users",
+		"block": [
+			{
+				"name": "create $HOME/.config/sway/",
+				"ansible.builtin.file": {
+					"path": "/home/gnuplex/.config/sway/",
+					"state": "directory",
+					"mode": "0755"
+				}
+			},
+			{
+				"name": "Install sway config",
+				"ansible.builtin.copy": {
+					"src": "i3status",
+					"dest": "/home/gnuplex/.config/sway/config",
+					"owner": "gnuplex",
+					"group": "gnuplex",
+					"mode": "0444",
+					"backup": "yes"
+				}
+			}
+		]
+	}
+]
