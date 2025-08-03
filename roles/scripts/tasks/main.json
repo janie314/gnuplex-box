@@ -36,17 +36,6 @@
         }
       },
       {
-        "name": "Install wallpaper",
-        "ansible.builtin.copy": {
-          "src": "wallpaper",
-          "dest": "/home/gnuplex/.local/bin/wallpaper",
-          "owner": "gnuplex",
-          "group": "gnuplex",
-          "mode": "0744",
-          "backup": "yes"
-        }
-      },
-      {
         "name": "Install calparse",
         "ansible.builtin.git": {
           "repo": "https://github.com/janie314/calparse",
