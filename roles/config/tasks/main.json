@@ -50,6 +50,17 @@
           "mode": "0644",
           "backup": "yes"
         }
+      },
+      {
+        "name": "Install doas.conf",
+        "ansible.builtin.copy": {
+          "src": "doas.conf",
+          "dest": "/etc/doas.conf",
+          "owner": "root",
+          "group": "root",
+          "mode": "0644",
+          "backup": "yes"
+        }
       }
     ]
   }
