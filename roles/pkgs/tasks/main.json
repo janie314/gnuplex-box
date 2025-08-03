@@ -9,6 +9,17 @@
 					"state": "latest"
 				},
 				"become": "yes"
+			},
+			{
+				"name": "Install apk config",
+				"ansible.builtin.copy": {
+					"src": "repositories",
+					"dest": "/etc/apk/repositories",
+					"owner": "root",
+					"group": "root",
+					"mode": "0644",
+					"backup": "yes"
+				}
 			}
 		]
 	}
