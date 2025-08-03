@@ -1,0 +1,51 @@
+[
+	{
+		"tags": "users",
+		"block": [
+			{
+				"name": "Install gnuplex-run",
+				"ansible.builtin.copy": {
+					"src": "gnuplex-run",
+					"dest": "/home/gnuplex/.local/bin/gnuplex-run",
+					"owner": "gnuplex",
+					"group": "gnuplex",
+					"mode": "0744",
+					"backup": "yes"
+				}
+			},
+			{
+				"name": "Install statusbar",
+				"ansible.builtin.copy": {
+					"src": "statusbar",
+					"dest": "/home/gnuplex/.local/bin/statusbar",
+					"owner": "gnuplex",
+					"group": "gnuplex",
+					"mode": "0744",
+					"backup": "yes"
+				}
+			},
+			{
+				"name": "Install sway-run",
+				"ansible.builtin.copy": {
+					"src": "sway-run",
+					"dest": "/home/gnuplex/.local/bin/sway-run",
+					"owner": "gnuplex",
+					"group": "gnuplex",
+					"mode": "0744",
+					"backup": "yes"
+				}
+			},
+			{
+				"name": "Install wallpaper",
+				"ansible.builtin.copy": {
+					"src": "wallpaper",
+					"dest": "/home/gnuplex/.local/bin/wallpaper",
+					"owner": "gnuplex",
+					"group": "gnuplex",
+					"mode": "0744",
+					"backup": "yes"
+				}
+			},
+		]
+	}
+]
