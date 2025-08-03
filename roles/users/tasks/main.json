@@ -3,7 +3,7 @@
     "tags": "users",
     "block": [
       {
-        "name": "Create gnuplex user in wheel group",
+        "name": "Create gnuplex user",
         "ansible.builtin.user": {
           "name": "gnuplex",
           "generate_ssh_key": true
@@ -35,9 +35,9 @@
         }
       },
       {
-        "name": "create $HOME/.config/",
+        "name": "create $HOME/.cache/",
         "ansible.builtin.file": {
-          "path": "/home/gnuplex/.config/",
+          "path": "/home/gnuplex/.cache/",
           "state": "directory",
           "mode": "0755"
         }
