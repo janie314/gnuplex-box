@@ -13,11 +13,30 @@
 			{
 				"name": "Install sway config",
 				"ansible.builtin.copy": {
-					"src": "i3status",
+					"src": "sway",
 					"dest": "/home/gnuplex/.config/sway/config",
 					"owner": "gnuplex",
 					"group": "gnuplex",
-					"mode": "0444",
+					"mode": "0644",
+					"backup": "yes"
+				}
+			},
+			{
+				"name": "create $HOME/.config/i3status/",
+				"ansible.builtin.file": {
+					"path": "/home/gnuplex/.config/i3status/",
+					"state": "directory",
+					"mode": "0755"
+				}
+			},
+			{
+				"name": "Install i3status config",
+				"ansible.builtin.copy": {
+					"src": "i3status",
+					"dest": "/home/gnuplex/.config/i3status/config",
+					"owner": "gnuplex",
+					"group": "gnuplex",
+					"mode": "0644",
 					"backup": "yes"
 				}
 			}
