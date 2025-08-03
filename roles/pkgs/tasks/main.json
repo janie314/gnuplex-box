@@ -5,7 +5,15 @@
 			{
 				"name": "Install packages",
 				"ansible.builtin.package": {
-					"name": ["git", "go"],
+					"name": [
+						"git",
+						"sway",
+						"swaybg",
+						"dolphin",
+						"firefox",
+						"mpv",
+						"caddy"
+					],
 					"state": "latest"
 				},
 				"become": "yes"
