@@ -1,47 +1,47 @@
 [
-	{
-		"tags": "users",
-		"block": [
-			{
-				"name": "Create gnuplex user in wheel group",
-				"ansible.builtin.user": {
-					"name": "gnuplex",
-					"generate_ssh_key": true
-				},
-				"become": "yes"
-			},
-			{
-				"name": "create $HOME/.local/bin/",
-				"ansible.builtin.file": {
-					"path": "/home/gnuplex/.local/bin/",
-					"state": "directory",
-					"mode": "0755"
-				}
-			},
-			{
-				"name": "create $HOME/.config/",
-				"ansible.builtin.file": {
-					"path": "/home/gnuplex/.config/",
-					"state": "directory",
-					"mode": "0755"
-				}
-			},
-			{
-				"name": "create $HOME/.config/sway/",
-				"ansible.builtin.file": {
-					"path": "/home/gnuplex/.config/sway/",
-					"state": "directory",
-					"mode": "0755"
-				}
-			},
-			{
-				"name": "create $HOME/.config/",
-				"ansible.builtin.file": {
-					"path": "/home/gnuplex/.config/",
-					"state": "directory",
-					"mode": "0755"
-				}
-			}
-		]
-	}
+  {
+    "tags": "users",
+    "block": [
+      {
+        "name": "Create gnuplex user in wheel group",
+        "ansible.builtin.user": {
+          "name": "gnuplex",
+          "generate_ssh_key": true
+        },
+        "become": "yes"
+      },
+      {
+        "name": "create $HOME/.local/bin/",
+        "ansible.builtin.file": {
+          "path": "/home/gnuplex/.local/bin/",
+          "state": "directory",
+          "mode": "0755"
+        }
+      },
+      {
+        "name": "create $HOME/.config/",
+        "ansible.builtin.file": {
+          "path": "/home/gnuplex/.config/",
+          "state": "directory",
+          "mode": "0755"
+        }
+      },
+      {
+        "name": "create $HOME/.config/sway/",
+        "ansible.builtin.file": {
+          "path": "/home/gnuplex/.config/sway/",
+          "state": "directory",
+          "mode": "0755"
+        }
+      },
+      {
+        "name": "create $HOME/.config/",
+        "ansible.builtin.file": {
+          "path": "/home/gnuplex/.config/",
+          "state": "directory",
+          "mode": "0755"
+        }
+      }
+    ]
+  }
 ]

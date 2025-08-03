@@ -1,21 +1,21 @@
 [
-	{
-		"name": "Deploy GNUPlex Box",
-		"hosts": "targets",
-		"strategy": "free",
-		"roles": [
-			{
-				"name": "pkgs"
-			},
-			{
-				"name": "users"
-			},
-			{
-				"name": "config"
-			},
-			{
-				"name": "scripts"
-			}
-		]
-	}
+  {
+    "name": "Deploy GNUPlex Box",
+    "hosts": "targets",
+    "strategy": "free",
+    "roles": [
+      {
+        "name": "pkgs"
+      },
+      {
+        "name": "users"
+      },
+      {
+        "name": "config"
+      },
+      {
+        "name": "scripts"
+      }
+    ]
+  }
 ]
