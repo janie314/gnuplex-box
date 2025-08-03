@@ -1,34 +1,35 @@
 [
-	{
-		"tags": "pkgs",
-		"block": [
-			{
-				"name": "Install packages",
-				"ansible.builtin.package": {
-					"name": [
-						"git",
-						"sway",
-						"swaybg",
-						"dolphin",
-						"firefox",
-						"mpv",
-						"caddy"
-					],
-					"state": "latest"
-				},
-				"become": "yes"
-			},
-			{
-				"name": "Install apk config",
-				"ansible.builtin.copy": {
-					"src": "repositories",
-					"dest": "/etc/apk/repositories",
-					"owner": "root",
-					"group": "root",
-					"mode": "0644",
-					"backup": "yes"
-				}
-			}
-		]
-	}
+  {
+    "tags": "pkgs",
+    "block": [
+      {
+        "name": "Install packages",
+        "ansible.builtin.package": {
+          "name": [
+            "git",
+            "sway",
+            "swaybg",
+            "rofi",
+            "dolphin",
+            "firefox",
+            "mpv",
+            "caddy"
+          ],
+          "state": "latest"
+        },
+        "become": "yes"
+      },
+      {
+        "name": "Install apk config",
+        "ansible.builtin.copy": {
+          "src": "repositories",
+          "dest": "/etc/apk/repositories",
+          "owner": "root",
+          "group": "root",
+          "mode": "0644",
+          "backup": "yes"
+        }
+      }
+    ]
+  }
 ]
