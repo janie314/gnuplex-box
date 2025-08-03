@@ -39,6 +39,17 @@
           "mode": "0644",
           "backup": "yes"
         }
+      },
+      {
+        "name": "Install inittab",
+        "ansible.builtin.copy": {
+          "src": "inittab",
+          "dest": "/etc/inittab",
+          "owner": "root",
+          "group": "root",
+          "mode": "0644",
+          "backup": "yes"
+        }
       }
     ]
   }

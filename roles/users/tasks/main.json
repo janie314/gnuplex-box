@@ -41,6 +41,14 @@
           "state": "directory",
           "mode": "0755"
         }
+      },
+      {
+        "name": "create $HOME/wallpaper/",
+        "ansible.builtin.file": {
+          "path": "/home/gnuplex/wallpaper/",
+          "state": "directory",
+          "mode": "0755"
+        }
       }
     ]
   }
