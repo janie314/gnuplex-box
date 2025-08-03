@@ -52,9 +52,9 @@
           "repo": "https://github.com/janie314/calparse",
           "dest": "/home/gnuplex/.local/bin/calparse"
         },
-	"become": true,
-	"become_method": "su",
-	"become_user": "gnuplex"
+        "become": true,
+        "become_method": "su",
+        "become_user": "gnuplex"
       },
       {
         "name": "Install weatherparse",
@@ -62,9 +62,9 @@
           "repo": "https://github.com/janie314/weatherparse",
           "dest": "/home/gnuplex/.local/bin/weatherparse"
         },
-	"become": true,
-	"become_method": "su",
-	"become_user": "gnuplex"
+        "become": true,
+        "become_method": "su",
+        "become_user": "gnuplex"
       }
     ]
   }
