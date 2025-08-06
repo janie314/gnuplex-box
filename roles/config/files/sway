@@ -8,6 +8,7 @@ floating_modifier $mod normal
 bindsym $mod+f fullscreen
 
 bar {
+    font Deja Vu Sans Mono 30
     status_command i3status
 }
 
