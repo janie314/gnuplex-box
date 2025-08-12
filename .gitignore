@@ -1,3 +1,4 @@
+.ansible
+hosts
 node_modules
 .venv
-.ansible
